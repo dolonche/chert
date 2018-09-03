@@ -5,6 +5,7 @@
   background-color: rgba(10, 10, 10, 0.7);
   opacity: 0;
   visibility: hidden;
+  z-index: 2000;
   &--open {
     visibility: visible;
     opacity: 1;
