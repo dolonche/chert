@@ -1,0 +1,128 @@
+.main-nav {
+  flex-grow: 2;
+  &__toggle {
+    display: none;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    &-item {
+      a {
+        text-decoration: none;
+        font-weight: lighter;
+        color: #333;
+        font-size: 18px;
+        position: relative;
+        &::after,
+        &::before {
+          content: '';
+          position: absolute;
+          top: calc(100% + 13px);
+          width: 0;
+          right: 0;
+          height: 3px;
+        }
+
+        &::before {
+          transition: width .4s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;
+          background: #1D75BF;
+        }
+
+        &::after {
+          transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+          background: #1D75BF;
+        }
+        &:hover {
+          color: #aaa;
+
+          &::after,
+          &::before {
+            width: 100%;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$mobile-widths} {
+  .main-nav {
+    &__list {
+      transition: 0.8s;
+      position: absolute;
+      flex-direction: column;
+      width: 100%;
+      z-index: 10;
+      background-color: rgb(245, 245, 245);
+      left: 0;
+      top: 100%;
+      padding-top: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      box-sizing: border-box;
+      &-item {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        a{
+          &::before, &::after{
+            display: none;
+          }
+        }
+      }
+    }
+    &--opened {
+      .main-nav__list {
+        transform: translateY(0);
+      }
+    }
+    &--closed {
+      .main-nav__list {
+        transform: translateY(-150%);
+      }
+    }
+    &__toggle {
+      position: absolute;
+      background-color: #1D75BF;
+      display: block;
+      width: 24px;
+      height: 4px;
+      font-size: 0;
+      border: none;
+      right: 20px;
+      top: 26px;
+      transition: 0.4s all;
+      z-index: 999;
+      visibility: visible;
+      outline: none;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: #1D75BF;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        transition: 0.4s all;
+      }
+      &::before {
+        top: -7px;
+      }
+      &::after {
+        bottom: -7px;
+      }
+      &--open {
+        background-color: transparent;
+        top: 37px;
+        &::after {
+          transform: rotate(45deg) translate(-10px, -10px);
+        }
+        &::before {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}

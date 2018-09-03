@@ -1,0 +1,109 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  &__top {
+    a {
+      color: #000;
+      transition: 0.5s all;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    &-wrapper {
+      background-color: #fbfbfb;
+      z-index: 1000;
+    }
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    @extend %container;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+    &-phone {
+      display: flex;
+      img {
+        width: 30px;
+        height: 30px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 12px;
+      }
+      a {
+        margin-top: auto;
+        margin-bottom: auto;
+        text-decoration: none;
+      }
+    }
+    &-mail {
+      display: flex;
+      img {
+        width: 30px;
+        height: 30px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 12px;
+      }
+      a {
+        margin-top: auto;
+        margin-bottom: auto;
+        text-decoration: none;
+      }
+    }
+    &-social {
+      a {
+        margin-left: 3px;
+        margin-right: 3px;
+        img {
+          width: 20px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  &__bottom {
+    &-wrapper {
+      background-color: #F5F5F5;
+    }
+    @extend %container;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    &-logo {
+      font-size: 18px;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-right: 80px;
+      font-weight: bold;
+      color: #1D75BF;
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+  }
+}
+
+@media #{$mobile-widths} {
+  .page-header {
+    &__top {
+      &-phone,
+      &-social {
+        display: none;
+      }
+      &-mail {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+    &__bottom {
+      position: relative;
+      &-logo {
+        margin-right: 0;
+      }
+    }
+  }
+}

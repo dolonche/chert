@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body class="page-body">
+  //= include/header.html
+  <main>
+    <div class="title-section__wrapper">
+      <div class="title-section title-section--main">Чертежно - графические и конструкторские работы карандашом и тушью<br>Выполнение любых заданий для художественных ВУЗов и школ</div>
+    </div>
+    <div class="feedback-button__wrapper">
+      <a href="" class="feedback-button">Отправить заявку</a>
+    </div>
+    <div class="title-section__wrapper">
+      <div class="title-section">Почему стоит обратиться именно ко мне?</div>
+    </div>
+    <div class="advantages__wrapper">
+      <section class="advantages">
+        <div class="advantages__left">
+          <img src="img/decor/work.svg" alt="">
+        </div>
+        <div class="advantages__right">
+          <div class="advantages__right-item">
+            <b>Опыт</b>
+            <p>Меня зовут Галина Большакова. Более 25 лет я выполняю чертежи любой сложности</p>
+          </div>
+          <div class="advantages__right-item">
+            <b>Гарантии</b>
+            <p>Качество и сроки принципиально гарантированы многолетним опытом</p>
+          </div>
+          <div class="advantages__right-item">
+            <b>Качество</b>
+            <p>Многие студенты обращаются ко мне по рекомендации своих знакомых.</p>
+          </div>
+          <div class="advantages__right-item">
+            <b>Надежность</b>
+            <p>Я сама выполняю все чертежи и задания и не являюсь посредником, поэтому вы экономите и не переплачиваете</p>
+          </div>
+          <div class="advantages__right-item">
+            <b>Экономия</b>
+            <p>Для выполнения ваших заданий я бесплатно использую ватман, тушь, краски, инструменты и т.д.</p>
+          </div>
+          <div class="advantages__right-item">
+            <b>Комфорт</b>
+            <p>Задания можно переслать на почту или позвонить по телефону, и я сразу отвечу</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  //= include/footer.html
+  <div class="overlay"></div>
+  <div class="popup">
+    <div class="popup__close"></div>
+    <form action="" class="popup__form">
+      <h4 class="popup__form-title">Обратная связь</h4>
+      <div class="popup__form-bunch"><label for="email">E-mail</label><input type="email" id="email"></div>
+      <div class="popup__form-bunch"><label for="tel">Телефон</label><input type="tel" id="tel"></div>
+      <div class="popup__form-bunch"><label for="comment">Ваше сообщение</label><textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+      </div>
+      <button type="submit">Отправить</button>
+    </form>
+  </div>
+  <script src="js/main.min.js"></script>
+  <script src="js/feedback.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+.portfolio {
+  @extend %container;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  * {
+    outline: none;
+  }
+  &__item {
+    width: calc(33.333333% - 10px);
+    height: 400px;
+    outline: none;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    &::before {
+      position: absolute;
+      width: 100%;
+      background-color: rgba(240, 240, 240, 0.4);
+      z-index: 100;
+      text-align: center;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      color: #1D75BF;
+      font-weight: bold;
+      top: -14px;
+    }
+    &:nth-of-type(1) {
+      &::before {
+        content: "ИГ и НГ";
+      }
+    }
+    &:nth-of-type(2) {
+      &::before {
+        content: "Строительное черчение";
+      }
+    }
+    &:nth-of-type(3) {
+      &::before {
+        content: "Машиностроит. черчение";
+      }
+    }
+    &:nth-of-type(4) {
+      &::before {
+        content: "Архитектурная графика";
+      }
+    }
+    &:nth-of-type(5) {
+      &::before {
+        content: "Дизайн интерьера и топография";
+      }
+    }
+    &:nth-of-type(6) {
+      &::before {
+        content: "Художеств. ВУЗы и школы";
+      }
+    }
+    .owl-nav {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      button.owl-prev,
+      button.owl-next {
+        background-color: transparent;
+        outline: none;
+        &:hover {
+          background-color: transparent;
+        }
+        &::before {
+          border-left: 3px solid #1D75BF;
+          border-bottom: 3px solid #1D75BF;
+        }
+      }
+    }
+    .item {
+      width: 100%;
+      height: 400px;
+      a {
+        display: flex;
+        height: 100%;
+        background-color: rgba(240, 240, 240, 0.4);
+        box-sizing: border-box;
+        img {
+          margin-top: auto;
+          margin-bottom: auto;
+          width: 100%;
+          height: auto;
+          max-height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media #{$tablet-widths} {
+  .portfolio {
+    &__item {
+      width: calc(50% - 10px);
+    }
+  }
+}
+
+@media #{$mobile-widths} {
+  .portfolio {
+    &__item {
+      width: 100%;
+    }
+  }
+}

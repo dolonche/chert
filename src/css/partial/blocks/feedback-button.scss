@@ -1,0 +1,15 @@
+.feedback-button {
+  &__wrapper {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #1D75BF;
+  padding: 12px 42px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+}

@@ -1,0 +1,20 @@
+.title-section{
+  &__wrapper{
+    background-color: #FBFBFB;
+    background-image: repeating-linear-gradient(90deg, rgba(29, 117, 191, 0.05), rgba(29, 117, 191, 0.05) 2px, transparent 0, transparent 10px), repeating-linear-gradient(-180deg, rgba(29, 117, 191, 0.05), rgba(29, 117, 191, 0.05) 2px, transparent 0, transparent 10px);
+  }
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @extend %container;
+  text-align: center;
+  font-size: 24px;
+  line-height: 30px;
+  &--main{
+    letter-spacing: 1px;
+  }
+}
+@media #{$tablet-widths}{
+  .title-section{
+    font-size: 18px;
+  }
+}
