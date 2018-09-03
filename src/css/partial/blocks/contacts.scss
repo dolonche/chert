@@ -138,6 +138,10 @@
     }
     &__right {
       width: 100%;
+      &-title,
+      &-form {
+        padding-left: 0;
+      }
     }
   }
 }
