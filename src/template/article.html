@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body class="page-body">
+  //= include/header.html
+  <main>
+    <div class="title-section__wrapper">
+      <div class="title-section">Заголовок статьи</div>
+    </div>
+    <div class="article__wrapper">
+      <div class="article">
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam adipisci quo exercitationem sint consectetur dolorum repellendus, alias provident sed aspernatur voluptates cumque ratione nam nemo, ipsum minus magni quisquam esse!</span>
+          <span>Commodi labore cum nobis at vitae iste, incidunt fuga, debitis obcaecati quidem laudantium? Tempore excepturi, labore sint totam, ducimus saepe possimus necessitatibus fuga sunt quos eum. Quae, quia magnam cum!</span>
+          <a href="https://via.placeholder.com/150.png/09f/ccc" class="image-link">
+             <img src="https://via.placeholder.com/150.png/09f/ccc" alt="" class="left">
+          </a>
+          <span>Nostrum modi harum esse quo quasi quaerat maxime mollitia id, odit laboriosam, aperiam qui doloremque, repellat. Eius autem, cum sequi accusamus, qui pariatur asperiores, quibusdam assumenda earum officiis vel amet.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste alias at aut molestiae iusto repellendus amet quam cupiditate dolores nihil quod, et tempora quae, est praesentium nemo voluptatum quo fuga.</span>
+          <a href="https://via.placeholder.com/150.png/09f/ccc" class="image-link">
+          <img src="https://via.placeholder.com/150.png/09f/ccc" alt="" class="right">
+          </a>
+          <span>Nesciunt ratione quis, dolorum asperiores cupiditate cum deleniti ipsam. Facere quam, provident tempore totam et dolor sint! Dolor perferendis harum vel, veritatis placeat nisi corporis commodi hic aliquid dolorem expedita!</span>
+          <span>Optio fugiat pariatur vel. Omnis corrupti vero ut quia praesentium eum obcaecati labore deserunt explicabo consectetur repellendus necessitatibus facilis, rerum laboriosam sapiente eius nemo, ab eligendi. Laboriosam sunt vel ducimus!</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, veniam provident possimus error dolorum nisi accusamus quam laboriosam inventore vel illum temporibus iure laudantium culpa reprehenderit nemo repellat beatae ducimus.</span><span>Dignissimos corporis quos veniam vel architecto quisquam hic eveniet consequatur, eligendi eius neque a, eos omnis voluptas, error excepturi nisi nobis adipisci accusamus modi sapiente quod. Illo esse distinctio, in.</span></p>
+        <a href="https://via.placeholder.com/468x160.png/09f/ccc" class="image-link">
+            <img src="https://via.placeholder.com/468x160.png/09f/ccc" alt="" class="center"></a>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi molestias, eum animi? Enim optio, nulla libero porro reprehenderit, deleniti quasi similique nemo vero asperiores modi corporis, eos aliquid iure totam.</span>
+          <span>Sit culpa similique optio blanditiis magnam eum officia aliquam rem quia odio deleniti architecto iste corporis consectetur amet, alias laudantium aut illo non, veniam iure necessitatibus porro ex. Earum, nemo?</span>
+          <span>Ab voluptatum, unde mollitia, porro dolorum, nam fugit perferendis expedita odit rerum delectus commodi doloremque voluptatibus quis quod. Vero aperiam amet illum a quibusdam provident, laudantium temporibus et quas deleniti.</span>
+          <span>Ut odit, sunt est labore, officia ullam fuga aspernatur sequi incidunt repellendus cumque excepturi expedita culpa. Maiores esse consectetur eligendi maxime, facere dicta libero, magni ut unde dignissimos, ea consequatur!</span>
+          <span>Sed aliquam quia, maxime odio sunt dolore sequi ratione dolorem vel? Eligendi repudiandae, ea explicabo labore amet, accusantium, repellat, voluptas numquam aliquid odit harum earum cupiditate laborum deserunt excepturi veritatis.</span></p>
+        <a href="https://via.placeholder.com/468x160.png/09f/ccc" class="image-link">
+        <img src="https://via.placeholder.com/468x160.png/09f/ccc" alt="" class="w100">
+        </a>
+      </div>
+    </div>
+  </main>
+  //= include/footer.html
+  <script src="js/main.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script>
+    $('.image-link').magnificPopup({
+      type: 'image',
+      mainClass: 'mfp-with-zoom',
+      zoom: {
+        enabled: true,
+        duration: 300,
+        easing: 'ease-in-out',
+        opener: function(openerElement) {
+          return openerElement.is('img') ? openerElement : openerElement.find('img');
+        }
+      }
+
+    });
+  </script>
+</body>
+
+</html>

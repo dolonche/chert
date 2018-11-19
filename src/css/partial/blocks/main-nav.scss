@@ -45,6 +45,16 @@
           }
         }
       }
+      &.active {
+        a {
+          color: #aaa;
+          &::after,
+          &::before {
+            width: 100%;
+            left: 0;
+          }
+        }
+      }
     }
   }
 }
@@ -67,8 +77,9 @@
       &-item {
         padding-top: 10px;
         padding-bottom: 10px;
-        a{
-          &::before, &::after{
+        a {
+          &::before,
+          &::after {
             display: none;
           }
         }

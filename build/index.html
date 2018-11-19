@@ -33,7 +33,7 @@
             <button class="main-nav__toggle" type="button">Открыть меню</button>
             <ul class="main-nav__list">
               <li class="main-nav__list-item"><a href="price.html">Услуги и цены</a></li>
-              <li class="main-nav__list-item"><a href="portfolio.html">Портфолио</a></li>
+              <li class="main-nav__list-item active"><a href="portfolio.html">Портфолио</a></li>
               <li class="main-nav__list-item"><a href="contacts.html">Контакты и оплата</a></li>
             </ul>
           </nav>
@@ -96,9 +96,17 @@
       <div class="popup__form-bunch"><label for="email">E-mail</label><input type="email" id="email"></div>
       <div class="popup__form-bunch"><label for="tel">Телефон</label><input type="tel" id="tel"></div>
       <div class="popup__form-bunch"><label for="comment">Ваше сообщение</label><textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+      <div class="popup__form-bunch popup__form-bunch--h">
+      <label for="captcha">Введите число</label><input type="text" class="input" id="captcha"><img src="img/captcha.php" alt=""></div>
       </div>
       <button type="submit">Отправить</button>
     </form>
+  </div>
+  <div class="popup-success">
+   <div class="popup-success__close"></div>
+    <p class="popup-success__text">
+      Заявка отправлена. <br> Если вы правильно указали e-mail, то вы получите уведомление. Если вы не получили уведомление, скорее всего я не смогу с вами связаться. Прошу вас связаться со мной по телефонам, указанным на странице <a href="contacts.html">Контакты</a>.
+    </p>
   </div>
   <script src="js/main.min.js"></script>
   <script src="js/feedback.min.js"></script>

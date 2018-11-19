@@ -81,6 +81,17 @@
       flex-direction: column;
       margin-bottom: 10px;
       width: 100%;
+      &--h{
+        flex-direction: row;
+        margin-top: 10px;
+        flex-wrap: wrap;
+        input{
+          width: 80%;
+        }
+        img{
+          width: 20%;
+        }
+      }
     }
     button {
       display: block;
