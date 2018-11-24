@@ -87,6 +87,16 @@
   }
 }
 
+@media #{$tablet-widths} {
+  .page-header {
+    &__bottom {
+      &-logo {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
 @media #{$mobile-widths} {
   .page-header {
     &__top {
@@ -101,6 +111,7 @@
     }
     &__bottom {
       position: relative;
+      width: 100%;
       &-logo {
         margin-right: 0;
       }

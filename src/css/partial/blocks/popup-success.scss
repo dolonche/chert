@@ -14,6 +14,8 @@
   opacity: 0;
   visibility: hidden;
   z-index: 2000;
+  max-height: calc(100vh - 80px);
+  overflow-y: scroll;
   &--open {
     visibility: visible;
     opacity: 1;
@@ -45,10 +47,10 @@
       transform: rotate(45deg);
     }
   }
-  &__text{
+  &__text {
     letter-spacing: 1px;
     line-height: 28px;
-    a{
+    a {
       text-decoration: none;
       color: #1D75BF;
     }
