@@ -14,8 +14,6 @@
   opacity: 0;
   visibility: hidden;
   z-index: 2000;
-  max-height: calc(100vh - 80px);
-  overflow-y: scroll;
   &--open {
     visibility: visible;
     opacity: 1;
@@ -54,5 +52,12 @@
       text-decoration: none;
       color: #1D75BF;
     }
+  }
+}
+
+@media #{$mobile-widths} {
+  .popup-success {
+    max-height: calc(100vh - 80px);
+    overflow-y: scroll;
   }
 }

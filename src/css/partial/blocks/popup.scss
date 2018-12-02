@@ -14,8 +14,6 @@
   opacity: 0;
   visibility: hidden;
   z-index: 2000;
-  max-height: calc(100vh - 80px);
-  overflow-y: scroll;
   &--open {
     visibility: visible;
     opacity: 1;
@@ -83,14 +81,14 @@
       flex-direction: column;
       margin-bottom: 10px;
       width: 100%;
-      &--h{
+      &--h {
         flex-direction: row;
         margin-top: 10px;
         flex-wrap: wrap;
-        input{
+        input {
           width: 80%;
         }
-        img{
+        img {
           width: 20%;
         }
       }
@@ -110,5 +108,12 @@
         border-color: #4E82FF;
       }
     }
+  }
+}
+
+@media #{$mobile-widths} {
+  .popup-success {
+    max-height: calc(100vh - 80px);
+    overflow-y: scroll;
   }
 }
